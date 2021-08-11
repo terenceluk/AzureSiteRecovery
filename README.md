@@ -2,7 +2,7 @@
 Scripts related to ASR
 
 ASRTestFailover.ps1 - Script that hardcodes the Subscription ID, Recovery Services Vault, Recovery Plan, and then performs the following:
-1. Failvoer VNet to recover a single Recovery Plan
+1. Failover VNet to recover a single Recovery Plan
 2. Prompts to clean up the Test Failover for the Recovery Plan
 3. Clean up Recovery Plan
 
