@@ -2,9 +2,19 @@
 Scripts related to ASR
 
 ASRTestFailover.ps1 - Script that hardcodes the Subscription ID, Recovery Services Vault, Recovery Plan, and then performs the following:
-1. Failover VNet to recover a single Recovery Plan
+1. Initiate Test Failover for a single Recovery Plan
 2. Prompts to clean up the Test Failover for the Recovery Plan
 3. Clean up Recovery Plan
+
+ASRTestFailover-2-Plans.ps1 - Script that hardcodes the Subscription ID, 1 VM that needs to be shutdown, 2 VNets that are peered, Recovery Services Vault, Recovery Plan, and then performs the following:
+
+1. Shutdown VM
+2. Delete VNet peering
+3. Initiate Test Failover for 2 Recovery Plans
+4. Prompts to clean up the Test Failover for the Recovery Plan
+5. Clean up Recovery Plan
+6. Recreate VNet peering
+7. Restart VM that was shutdown
 
 Universal-ASRTestFailover.ps1 - Script that performs the following:
 1. Prompts user to log into Azure with Connect-AzAccount
